@@ -7,55 +7,109 @@
     tools:context=".ui.auth.LoginFragment">
 
     <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/medvest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MedVest+"
+            android:textColor="@color/palavras"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_tela_login_entrar"
+            android:textAlignment="textEnd"
+            android:textColor="@color/palavras" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_tela_login_insiradados"
+            android:textAlignment="textEnd"
+            android:textColor="@color/palavras" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="25dp">
+        app:layout_constraintVertical_bias="0.785">
 
         <TextView
             android:id="@+id/textviewEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email_text"
-            android:textColor="@color/palavras"/>
+            android:textColor="@color/palavras" />
 
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginTop="4dp"
             android:hint="@string/hint_edit_email"
-            style="@style/EditTextTheme"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="4dp" />
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:id="@+id/textViewSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/passord_text"
-            android:textColor="@color/palavras"
-            android:layout_marginTop="16dp"/>
+            android:textColor="@color/palavras" />
 
         <EditText
             android:id="@+id/editTextSenha"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:inputType="textPassword"
+            android:layout_marginTop="4dp"
             android:hint="@string/hint_edit_password"
-            style="@style/EditTextTheme"
-            android:layout_marginTop="4dp"/>
+            android:inputType="textPassword" />
 
-        <com.google.android.material.button.MaterialButton
+
+        <Button
             android:id="@+id/buttonLogin"
+            style="@style/ButtonTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/text_title_login_fragment"
-            style="@style/ButtonTheme"/>
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Continue"
+
+            android:textColor="#E6E6E6"
+            android:textColorHint="#E6E6E6"
+            android:textSize="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,37 +121,30 @@
                 android:id="@+id/textViewCriarConta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/text_button_register_login_fragment"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
-                android:layout_weight="1"/>
+                android:textColor="@color/palavras" />
 
             <TextView
                 android:id="@+id/textViewRecuperarConta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/text_button_recover_login_fragment"
                 android:textAlignment="textEnd"
-                android:textColor="@color/white"
-                android:layout_weight="1"/>
+                android:textColor="@color/palavras" />
         </LinearLayout>
+
         <ProgressBar
             android:id="@+id/progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:indeterminateTint="@color/white"
+            android:indeterminateTint="@color/palavras"
             android:visibility="invisible"
-            tools:visibility="visible"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Ana Júlia Boechat Rodrigues"
-            android:textSize="18dp"
-            android:textColor="@color/white"/>
+            tools:visibility="visible" />
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

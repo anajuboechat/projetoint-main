@@ -22,13 +22,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:navigationIcon="@drawable/outline_arrow_back_ios_new_24"
+            app:navigationIcon="@drawable/ic_back"
             android:paddingTop="40dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_title_toolbar_register_fragment"
-                android:textColor="@color/white"
+                android:textColor="@color/palavras"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="20dp"/>
 
@@ -45,18 +45,32 @@
             android:id="@+id/linearlayout2">
 
             <TextView
+                android:id="@+id/textviewNomeUsuário"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_text"
+                android:textColor="@color/palavras"/>
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/hint_edit_name"
+                style="@style/EditTextTheme"
+                android:layout_marginTop="4dp" />
+
+            <TextView
                 android:id="@+id/textviewEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email_text"
-                android:textColor="@color/white"/>
+                android:textColor="@color/palavras"/>
 
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="@string/hint_edit_email"
-                android:background="@drawable/edit_botoes"
+                style="@style/EditTextTheme"
                 android:inputType="textEmailAddress"
                 android:layout_marginTop="4dp" />
 
@@ -65,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/passord_text"
-                android:textColor="@color/white"
+                android:textColor="@color/palavras"
                 android:layout_marginTop="16dp"/>
 
             <EditText
@@ -79,18 +93,18 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCriarconta"
+                style="@style/ButtonTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_button_registeraccount_fragment"
-                style="@style/ButtonTheme"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="20dp"
+                android:text="@string/text_button_registeraccount_fragment" />
 
             <ProgressBar
                 android:id="@+id/progressbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:indeterminateTint="@color/white"
+                android:indeterminateTint="@color/palavras"
                 android:layout_marginTop="8dp"
                 android:visibility="invisible"
                 tools:visibility="visible"/>

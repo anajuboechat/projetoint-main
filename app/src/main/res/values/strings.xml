@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">MedVest+</string>
 
-    <string name="status_task_todo">A Fazer</string>
-    <string name="status_task_doing">Fazendo</string>
-    <string name="status_task_done">Feitas</string>
     <string name="hint_edit_email">Digite seu e-mail</string>
     <string name="hint_edit_password">Digite sua senha</string>
 
@@ -14,6 +11,7 @@
     <string name="passord_text">Senha</string>
     <string name="email_empty">Preencha seu email!</string>
     <string name="email_text">E-mail</string>
+    <string name="name_text">Nome</string>
 
     <string name="text_title_login_fragment">Login</string>
     <string name="text_button_register_login_fragment">Criar conta</string>
@@ -27,4 +25,8 @@
     <string name="text_info_recover_account_fragment">Informe seu email de cadastro para receber \n um link para alteração de senha.</string>
     <string name="text_title_toolbar_recover_account_fragment">Recuperar conta</string>
     <string name="text_button_recover_account_fragment">Enviar</string>
+    <string name="text_tela_login_entrar">Entrar</string>
+    <string name="text_tela_login_insiradados">Insira seus dados para continuar</string>
+    <string name="text_button_registeraccount_fragment">Criar conta</string>
+    <string name="hint_edit_name">Digite o seu nome de usuário</string>
 </resources>
